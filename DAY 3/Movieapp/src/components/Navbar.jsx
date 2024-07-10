@@ -5,8 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import{Link} from 'react-router-dom'
-const View = () => {
+const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -18,16 +17,17 @@ const View = () => {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
+            
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Myapp
+            Movie App
           </Typography>
-          <Link to={'/'}><Button color="inherit">View</Button></Link>
-          <Link to={'/add'}><Button color="inherit">Add</Button></Link>
-          </Toolbar>
+          <Button color="inherit">View</Button>
+          <Button color="inherit">Add</Button>
+        </Toolbar>
       </AppBar>
     </Box>
   )
 }
 
-export default View
+export default Navbar
